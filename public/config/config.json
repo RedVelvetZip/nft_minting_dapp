@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
-  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "CONTRACT_ADDRESS": "0xc49e6cde4a903391824b99fd20a0094ccff7ab13",
+  "SCAN_LINK": "https://polygonscan.com/token/0xc49e6cde4a903391824b99fd20a0094ccff7ab13",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "Matic",
     "ID": 137
   },
-  "NFT_NAME": "Nerdy Coder Clones",
-  "SYMBOL": "NCC",
-  "MAX_SUPPLY": 1000,
-  "WEI_COST": 75000000000000000,
-  "DISPLAY_COST": 0.075,
+  "NFT_NAME": "Shroomies",
+  "SYMBOL": "MUSH",
+  "MAX_SUPPLY": 500,
+  "WEI_COST": 500000000000000000,
+  "DISPLAY_COST": 0.5,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
-  "SHOW_BACKGROUND": true
+  "MARKETPLACE_LINK": "https://opensea.io/collection/shroomies-v2",
+  "SHOW_BACKGROUND": false
 }
