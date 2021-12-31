@@ -12,7 +12,7 @@ export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
   border: none;
-  background-color: var(--secondary);
+  background-color: var(--accent);
   padding: 10px;
   font-weight: bold;
   color: var(--secondary-text);
@@ -90,7 +90,7 @@ export const StyledImg = styled.img`
 `;
 
 export const StyledLink = styled.a`
-  color: var(--secondary);
+  color: var(--accent);
   text-decoration: none;
 `;
 
@@ -213,17 +213,17 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              backgroundColor: "var(--secondary)",
               padding: 24,
-              borderRadius: 24,
-              border: "4px dashed var(--secondary)",
+              borderRadius: 38,
+              border: "4px solid var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: 48,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
@@ -263,7 +263,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  ? {CONFIG.SYMBOL} ????? {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 {/* <s.SpacerXSmall />
@@ -379,7 +379,7 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+        {/* <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
           <s.TextDescription
             style={{
               textAlign: "center",
@@ -401,7 +401,7 @@ function App() {
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
           </s.TextDescription>
-        </s.Container>
+        </s.Container> */}
       </s.Container>
     </s.Screen>
   );
