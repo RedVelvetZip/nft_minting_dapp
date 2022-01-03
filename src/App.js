@@ -193,6 +193,17 @@ function App() {
     getData();
   }, [blockchain.account]);
 
+  const getPrecedingQMarks = () => {
+    if (data.totalSupply < 10) 
+      return '???'
+    else if (data.totalSupply < 100) 
+      return '??'
+    else if (data.totalSupply < 1000) 
+      return '?'
+    else 
+      return ''
+  };
+
   return (
     <s.Screen>
       <s.Container
@@ -226,8 +237,9 @@ function App() {
                 fontSize: 48,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
-              }}
+              }}//DONE:add preceding ?'s to total supply
             >
+              {getPrecedingQMarks()}
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
             </s.TextTitle>
             <s.TextDescription
@@ -260,12 +272,12 @@ function App() {
               </>
             ) : (
               <>
-                <s.TextTitle
+                {/* <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   ? {CONFIG.SYMBOL} ????? {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
-                </s.TextTitle>
+                </s.TextTitle> */}
                 {/* <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -276,21 +288,22 @@ function App() {
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
-                    <s.TextDescription
+                    {/* <s.TextDescription
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
                       }}
                     >
                       Connect to the {CONFIG.NETWORK.NAME} network
-                    </s.TextDescription>
+                    </s.TextDescription> */}
                     <s.SpacerSmall />
                     <StyledButton
-                      onClick={(e) => {
-                        e.preventDefault();
-                        dispatch(connect());
-                        getData();
-                      }}
+                    //TODO: activate button
+                      // onClick={(e) => {
+                      //   e.preventDefault();
+                      //   dispatch(connect());
+                      //   getData();
+                      // }}
                     >
                       ?????
                     </StyledButton>
