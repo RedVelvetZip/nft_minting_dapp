@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0xc49e6cde4a903391824b99fd20a0094ccff7ab13",
-  "SCAN_LINK": "https://etherscan.io/",
+  "CONTRACT_ADDRESS": "0xf9b952b815dae229837432b7b10ab523214de6cf",
+  "SCAN_LINK": "https://etherscan.io/address/0xf9b952b815dae229837432b7b10ab523214de6cf",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "ETH",
@@ -8,9 +8,9 @@
   },
   "NFT_NAME": "Vast Questions",
   "SYMBOL": "???",
-  "MAX_SUPPLY": 2222,
-  "WEI_COST": 80000000000000000,
-  "DISPLAY_COST": 0.08,
+  "MAX_SUPPLY": 3333,
+  "WEI_COST": 55000000000000000,
+  "DISPLAY_COST": 0.055,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/",
