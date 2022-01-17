@@ -195,13 +195,13 @@ function App() {
   }, [blockchain.account]);
 
   const getPrecedingQMarks = () => {
-    if (data.totalSupply < 10) 
+    if (data.totalSupply < 10)
       return '???'
-    else if (data.totalSupply < 100) 
+    else if (data.totalSupply < 100)
       return '??'
-    else if (data.totalSupply < 1000) 
+    else if (data.totalSupply < 1000)
       return '?'
-    else 
+    else
       return ''
   };
 
@@ -273,6 +273,11 @@ function App() {
               </>
             ) : (
               <>
+                <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  SALE HAS ENDED
+                </s.TextTitle>
                 {/* <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
@@ -287,7 +292,7 @@ function App() {
                 </s.TextDescription>
                 <s.SpacerSmall /> */}
                 {blockchain.account === "" ||
-                blockchain.smartContract === null ? (
+                  blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
                     {/* <s.TextDescription
                       style={{
@@ -299,7 +304,7 @@ function App() {
                     </s.TextDescription> */}
                     <s.SpacerSmall />
                     <StyledButton
-                    //DONE: activate button
+                      //DONE: activate button
                       onClick={(e) => {
                         e.preventDefault();
                         dispatch(connect());
