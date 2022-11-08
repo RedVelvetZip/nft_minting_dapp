@@ -240,6 +240,10 @@ function App() {
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
+              <s.SpacerXSmall />
+              <StyledLink target={"_blank"} href={"https://opensea.io/collection/cryptorado-workshop"}>
+                View on Opensea
+              </StyledLink>
             </s.TextDescription>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
