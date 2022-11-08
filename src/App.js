@@ -201,12 +201,12 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+        <StyledLogo alt={"logo"} src={"/config/images/logo2.png"} />
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
+          {/* <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-          </s.Container>
+          </s.Container> */}
           <s.SpacerLarge />
           <s.Container
             flex={2}
@@ -220,7 +220,7 @@ function App() {
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
-            <s.TextTitle
+            {/* <s.TextTitle
               style={{
                 textAlign: "center",
                 fontSize: 50,
@@ -229,7 +229,7 @@ function App() {
               }}
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
-            </s.TextTitle>
+            </s.TextTitle> */}
             <s.TextDescription
               style={{
                 textAlign: "center",
@@ -263,8 +263,9 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
+                  {/* 1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}. */}
+                  These tokens are free for the Cryptorado NFT Workshop!
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
@@ -370,13 +371,13 @@ function App() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
+          {/* <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
               src={"/config/images/example.gif"}
               style={{ transform: "scaleX(-1)" }}
             />
-          </s.Container>
+          </s.Container> */}
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
