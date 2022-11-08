@@ -99,7 +99,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [feedback, setFeedback] = useState(`Click claim to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -295,6 +295,17 @@ function App() {
                     >
                       CONNECT
                     </StyledButton>
+                    <s.SpacerSmall />
+                    <s.TextDescription
+                      style={{
+                        textAlign: "center",
+                        color: "var(--primary-text)",
+                      }}
+                    >
+                      <StyledLink target={"_blank"} href={"https://cryptorado.org/"}>
+                        Find us on Cryptorado.org
+                      </StyledLink>
+                    </s.TextDescription>
                     {blockchain.errorMsg !== "" ? (
                       <>
                         <s.SpacerSmall />
@@ -321,7 +332,7 @@ function App() {
                     </s.TextDescription>
                     <s.SpacerMedium />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledRoundButton
+                      {/* <StyledRoundButton
                         style={{ lineHeight: 0.4 }}
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
@@ -330,7 +341,7 @@ function App() {
                         }}
                       >
                         -
-                      </StyledRoundButton>
+                      </StyledRoundButton> */}
                       <s.SpacerMedium />
                       <s.TextDescription
                         style={{
@@ -341,7 +352,7 @@ function App() {
                         {mintAmount}
                       </s.TextDescription>
                       <s.SpacerMedium />
-                      <StyledRoundButton
+                      {/* <StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -349,7 +360,7 @@ function App() {
                         }}
                       >
                         +
-                      </StyledRoundButton>
+                      </StyledRoundButton> */}
                     </s.Container>
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
@@ -361,7 +372,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "BUSY" : "CLAIM"}
                       </StyledButton>
                     </s.Container>
                   </>
