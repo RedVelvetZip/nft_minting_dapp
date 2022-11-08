@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0xDEbeCA3Ae672b8a92fe7a357371377A1b0d4a176",
-  "SCAN_LINK": "https://mumbai.polygonscan.com/token/0xDEbeCA3Ae672b8a92fe7a357371377A1b0d4a176",
+  "CONTRACT_ADDRESS": "0x2826B43d94d18fAD7216b809199547957f4597CB",
+  "SCAN_LINK": "https://polygonscan.com/token/0x2826B43d94d18fAD7216b809199547957f4597CB",
   "NETWORK": {
-    "NAME": "Polygon Mumbai",
+    "NAME": "Polygon",
     "SYMBOL": "Matic",
-    "ID": 80001
+    "ID": 137
   },
   "NFT_NAME": "Cryptorado Workshop",
   "SYMBOL": "CW",
