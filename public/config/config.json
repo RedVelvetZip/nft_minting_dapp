@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x2826B43d94d18fAD7216b809199547957f4597CB",
-  "SCAN_LINK": "https://polygonscan.com/token/0x2826B43d94d18fAD7216b809199547957f4597CB",
+  "CONTRACT_ADDRESS": "0x189894e4eb2F6992ceDCC635e8aCB8728499bd22",
+  "SCAN_LINK": "https://polygonscan.com/address/0x189894e4eb2f6992cedcc635e8acb8728499bd22",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "Matic",
@@ -9,10 +9,11 @@
   "NFT_NAME": "Rich Ramsay Studios NFT",
   "SYMBOL": "RR",
   "MAX_SUPPLY": 60,
-  "WEI_COST": 500000000000000000,
-  "DISPLAY_COST": 0.005,
-  "GAS_LIMIT": 350000,
+  "WEI_COST": 1000000000000000,
+  "DISPLAY_COST": 0.0001,
+  "GAS_PRICE": 4500000,
+  "GAS_LIMIT": 6500000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/cryptorado-workshop",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/rich-ramsay-studios-workshop",
   "SHOW_BACKGROUND": false
 }
