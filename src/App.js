@@ -275,7 +275,7 @@ function App() {
                 >
                   {/* 1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}. */}
-                  These tokens are free for the Rich Ramsay Studios NFT Workshop!
+                  These tokens are free for the MoonLab NFT Workshop!
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
@@ -312,8 +312,8 @@ function App() {
                         color: "var(--primary-text)",
                       }}
                     >
-                      <StyledLink target={"_blank"} href={"https://richramsaystudios.com/"}>
-                        Find us on richramsaystudios.com
+                      <StyledLink target={"_blank"} href={"https://moonlab.space/"}>
+                        Find us on moonlab.space
                       </StyledLink>
                     </s.TextDescription>
                     {blockchain.errorMsg !== "" ? (
