@@ -1,13 +1,13 @@
 {
-  "CONTRACT_ADDRESS": "0x189894e4eb2F6992ceDCC635e8aCB8728499bd22",
-  "SCAN_LINK": "https://polygonscan.com/address/0x189894e4eb2f6992cedcc635e8acb8728499bd22",
+  "CONTRACT_ADDRESS": "0x9bfe458B978C299b600db21e49Add046d945Befe",
+  "SCAN_LINK": "https://polygonscan.com/address/0x9bfe458B978C299b600db21e49Add046d945Befe",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "Matic",
     "ID": 137
   },
-  "NFT_NAME": "Rich Ramsay Studios NFT",
-  "SYMBOL": "RR",
+  "NFT_NAME": "MoonLab NFT",
+  "SYMBOL": "ML",
   "MAX_SUPPLY": 60,
   "WEI_COST": 1000000000000000,
   "DISPLAY_COST": 0.0001,
