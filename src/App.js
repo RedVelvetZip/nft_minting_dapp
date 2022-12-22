@@ -246,7 +246,7 @@ function App() {
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
               <s.SpacerXSmall />
-              <StyledLink target={"_blank"} href={"https://opensea.io/collection/rich-ramsay-studios-workshop"}>
+              <StyledLink target={"_blank"} href={"https://opensea.io/collection/moonlab-nft-workshop"}>
                 View on Opensea
               </StyledLink>
             </s.TextDescription>
