@@ -140,7 +140,7 @@ function App() {
         from: blockchain.account,
         value: totalCostWei,
         gas: 4700000,
-        gasPrice: 30000000000,
+        gasPrice: 40000000000,
       })
       .once("error", (err) => {
         console.log(err);
