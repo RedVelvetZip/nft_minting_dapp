@@ -114,8 +114,7 @@ function App() {
     MAX_SUPPLY: 1,
     WEI_COST: 0,
     DISPLAY_COST: 0,
-    GAS_PRICE: 4500000,
-    GAS_LIMIT: 6500000,
+    GAS_LIMIT: 0,
     MARKETPLACE: "",
     MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
@@ -125,10 +124,10 @@ function App() {
     console.log("/n/n/n/n/nBEGIN: ");
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
-    let gasPrice = CONFIG.GAS_PRICE;
     let totalCostWei = String(cost * mintAmount);
-    let totalGasPrice = String(gasPrice);
     let totalGasLimit = String(gasLimit * mintAmount);
+    let gasPrice = CONFIG.GAS_PRICE;
+    let totalGasPrice = String(gasPrice);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
@@ -141,7 +140,7 @@ function App() {
         from: blockchain.account,
         value: totalCostWei,
         gas: 4700000,
-  gasPrice: 40000000000,
+        gasPrice: 40000000000,
       })
       .once("error", (err) => {
         console.log(err);
@@ -246,7 +245,7 @@ function App() {
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
               <s.SpacerXSmall />
-              <StyledLink target={"_blank"} href={"https://opensea.io/collection/moonlab-nft-workshop"}>
+              <StyledLink target={"_blank"} href={"https://opensea.io/collection/cryptorado-workshop"}>
                 View on Opensea
               </StyledLink>
             </s.TextDescription>
@@ -275,7 +274,7 @@ function App() {
                 >
                   {/* 1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}. */}
-                  These tokens are free for the MoonLab NFT Workshop!
+                  These tokens are free for the Cryptorado NFT Workshop!
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
@@ -312,8 +311,8 @@ function App() {
                         color: "var(--primary-text)",
                       }}
                     >
-                      <StyledLink target={"_blank"} href={"https://moonlab.space/"}>
-                        Find us on moonlab.space
+                      <StyledLink target={"_blank"} href={"https://cryptorado.org/"}>
+                        Find us on Cryptorado.org
                       </StyledLink>
                     </s.TextDescription>
                     {blockchain.errorMsg !== "" ? (
