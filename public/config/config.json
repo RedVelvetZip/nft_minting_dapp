@@ -11,7 +11,7 @@
   "MAX_SUPPLY": 60,
   "WEI_COST": 500000000000000,
   "DISPLAY_COST": 0.005,
-  "GAS_PRICE": 4500000,
+  "GAS_PRICE": 4700000,
   "GAS_LIMIT": 6500000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/cryptorado-workshop",
