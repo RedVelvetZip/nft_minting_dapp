@@ -1,19 +1,19 @@
 {
-  "CONTRACT_ADDRESS": "0x9bfe458B978C299b600db21e49Add046d945Befe",
-  "SCAN_LINK": "https://polygonscan.com/address/0x9bfe458B978C299b600db21e49Add046d945Befe",
+  "CONTRACT_ADDRESS": "0x2826B43d94d18fAD7216b809199547957f4597CB",
+  "SCAN_LINK": "https://polygonscan.com/token/0x2826B43d94d18fAD7216b809199547957f4597CB",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "Matic",
     "ID": 137
   },
-  "NFT_NAME": "MoonLab NFT",
-  "SYMBOL": "ML",
+  "NFT_NAME": "Cryptorado Workshop",
+  "SYMBOL": "CW",
   "MAX_SUPPLY": 60,
-  "WEI_COST": 1000000000000000,
-  "DISPLAY_COST": 0.0001,
+  "WEI_COST": 500000000000000,
+  "DISPLAY_COST": 0.005,
   "GAS_PRICE": 4500000,
   "GAS_LIMIT": 6500000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/moonlab-nft-workshop",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/cryptorado-workshop",
   "SHOW_BACKGROUND": false
 }
